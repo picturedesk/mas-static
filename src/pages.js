@@ -7,14 +7,14 @@ const pages = [
     },
     template: './src/pages/home.hbs'
   },
-  {
-    output: './about/index.html',
-    content: {
-      title: 'About',
-      description: 'About Page'
-    },
-    template: './src/pages/about.hbs'
-  }
-]
+	{
+		output: './ueber-uns/index.html',
+		content: {
+			title: 'Über uns',
+			description: 'Über uns'
+		},
+		template: './src/pages/ueber-uns.hbs'
+	}
+];
 
-module.exports = pages
+module.exports = pages;

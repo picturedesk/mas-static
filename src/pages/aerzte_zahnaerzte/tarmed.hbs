@@ -1,0 +1,38 @@
+{{#> base }}
+
+	{{> header tarmed=this }}
+	{{> key-visual image="/assets/images/header_subsites_leistungserbringer_desktop.jpg" }}
+
+	<main role="main" class="container">
+
+		{{> title }}
+
+		{{#> text-link-image}}
+			<p>Seit 01.01.2018 ist die neue TARMED-Version 1.09 in Kraft. Bei der Anwendung dieser neuen Tarif-Version können
+				Fragen auftauchen.
+			</p>
+		{{/text-link-image}}
+		{{#> text-link-image}}
+			<p>Mit den hier aufgeführten FAQ zeigen wir Ihnen als Unterstützung, wie die Mission Headless Verunsicherung Leistungen, die mit
+				dem Tarif 1.09 verrechnet werden, prüft.
+			</p>
+		{{/text-link-image}}
+
+		{{> accordion accordion='
+			{"items":
+				[{
+					"title": "Eine Rechnung wurde zurückgewiesen. Wie erkenne ich den Grund für die Rückweisung? ",
+					"text": "<p>Die Mission Headless prüft sämtliche Mengen- Zeitlimiten und Kumulationsverbote.</p><p>Bei jeder Rückweisung finden Sie Angaben dazu, welche Positionen nicht kumuliert werden können oder welche Position eine Mengenlimite überschreitet. Sie sehen ebenfalls, welche Rechnungen in unsere Berechnung eingeflossen sind.</p><p>Die Herleitung der Kumulation oder Mengenlimite entnehmen Sie der Tarifposition oder dem entsprechenden Kapitel im Tarif TARMED.</p>"
+
+				},
+				{
+					"title": "Die vorgesehene Mengenlimite erlaubt mir nicht, meine Behandlung vollumfänglich abzubilden. Was kann ich tun?",
+					"text": "<p>Eine Überschreitung der Mengenlimite ist gemäss TARMED nicht vorgesehen und kann entsprechend durch die Mission Headless nicht gutgeheissen werden.</p><p>Besteht bei Patienten ein erhöhter Zeitbedarf, kann im Ausnahmefall ein erhöhter Behandlungsbedarf angewandt werden (Leistungsgruppe-30).</p><p>Sie benötigen keine Kostengutsprache für die Verrechnung von erhöhtem Behandlungsbedarf. Dokumentieren Sie, warum Ihre Behandlung zur Verrechnung des erhöhten Bedarfs geführt hat. Auf Anfrage müssen Sie den erhöhten Behandlungsbedarf bestätigen bzw. begründen können.</p>"
+				}]
+			}'
+		}}
+
+		{{> footer }}
+	</main>
+
+{{/ base }}

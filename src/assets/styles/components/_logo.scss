@@ -1,10 +1,20 @@
 .logo {
 	position: absolute;
-	z-index: 1;
-	top: 125px;
+	top: 100px;
 
 	.logo-image {
-		width: 116px;
-		height: 106px;
+		width: 100px;
 	}
 }
+
+.show-logo .logo {
+	position: relative;
+	top: 0;
+	width: 30px;
+
+	.logo-image {
+		width: 30px;
+		height: auto;
+	}
+}
+

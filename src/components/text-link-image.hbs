@@ -1,0 +1,23 @@
+<div class="text">
+	{{#if title}}
+		<h2>{{title}}</h2>
+	{{/if}}
+	<div class="row">
+		{{#if image}}
+			<div class="col-md-6">
+				{{#if link}}<a href="{{link}}" target="_blank">{{/if}}
+					<img title="{{link-title}}" src="{{image}}" alt="{{link-title}}" class="img-fluid">
+				{{#if link}}</a>{{/if}}
+			</div>
+		{{/if}}
+		<div class="col {{#if image}}col-md-6{{/if}}">
+			{{> @partial-block }}
+
+			{{#if link}}
+				<p><a href="{{link}}" class="btn btn-primary" href="#" role="button">
+					{{link-title}}
+				</a></p>
+			{{/if}}
+		</div>
+	</div>
+</div>

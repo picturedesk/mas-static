@@ -2,14 +2,44 @@
 
 	{{> header home=this }}
 	{{> logo }}
-	{{> key-visual }}
+	{{> key-visual image="./assets/images/header_subsites_leistungserbringer_desktop.jpg" }}
 
-  <main role="main" class="container">
+	<main role="main" class="container">
 
-    {{#> welcome title="Home Page" }}
-      <p class="lead"><i class="fas fa-rocket"></i> Use this <a href="/about">document</a> as a way to quickly start any new project.</p>
-    {{/welcome}}
+		{{> title }}
 
-  </main>
+		{{#> text-link-image}}
+			<p>Die Mission Headless Verunsicherung legt grossen Wert auf die Themen Qualität und Integrierte Versorgung. Damit wir uns
+				gemeinsam mit unseren Partnern bei diesen Themen weiterentwickeln können, braucht es Vertrauen und gegenseitiges
+				Verständnis.</p>
+			<p>Um dies zu erreichen setzen wir auf eine möglichst hohe Transparenz. Hier finden Sie einige
+				Hintergrundinformationen über die Werte der Mission Headless und die Zusammenarbeitsformen mit unseren
+				Leistungserbringern.</p>
+		{{/text-link-image}}
+
+		{{> line-space line=true }}
+
+		{{#> text-link-image title="Diagnose: Stationär. Therapie: Ambulant."
+												 image="/assets/images/home/Kongress+2019.jpg"
+												 link="/ueber-uns/kongresse/2019_ambulant_vor_stationaer.html"
+												 link-title="Kongress 2019" }}
+			<p>Wie facettenreich das aktuelle Branchenthema "ambulant vor stationär" ist, wurde durch die angeregten
+				Diskussionen bestätigt. Hier finden Sie die Präsentationen und Bilder unserer Veranstaltung.</p>
+		{{/text-link-image}}
+
+		{{> line-space line=true }}
+
+		{{#> text-link-image title="im dialog – Ihre gesundheitspolitische Publikation"
+												 image="/assets/images/home/im+dialog+2-2019.jpg"
+												 link="https://www.css.ch/de/home/ueber_uns/medien_publikationen/publikationen/dialog.html"
+												 link-title="im dialog 2/2019" }}
+			<p>Die gesundheitspolitische Publikation der Mission Headless richtet sich an Entscheiderinnen und Entscheider im
+				Gesundheitswesen. Sie erscheint drei Mal jährlich in Deutsch und Französisch. Die aktuelle Ausgabe widmet sich
+				dem Thema „Passgenau. Im Fokus: Die Krankenversicherung von morgen“.</p>
+		{{/text-link-image}}
+
+		{{> footer }}
+
+	</main>
 
 {{/ base }}

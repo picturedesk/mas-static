@@ -1,25 +1,71 @@
 <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+{{> logo }}
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
 					aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
 	<div class="container">
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
-			<ul class="navbar-nav">
+			<ul class="nav navbar-nav">
 				<li class="nav-item {{#if home}} active{{/if}}">
 					<a class="nav-link" href="/">Home</a>
 				</li>
 				<li class="nav-item dropdown {{#if ueberuns}} active{{/if}}">
-					<a class="nav-link dropdown-toggle" href="/ueber-uns" href="#" id="navbarDropdownMenuLink" role="button"
+					<a class="nav-link dropdown-toggle" href="/ueber-uns.html" href="#" id="navbarDropdownMenuLink" role="button"
 						 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&Uuml;ber uns</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item {{#if ueberuns}} active{{/if}}" href="/ueber-uns">&Uuml;ber uns</a>
-						<a class="dropdown-item" href="#">Qualit&auml;t</a>
-						<a class="dropdown-item" href="#">Another action</a>
-						<a class="dropdown-item" href="#">Something else here</a>
-					</div>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<li><a class="dropdown-item {{#if ueberuns}} active{{/if}}" href="/ueber-uns.html">&Uuml;ber uns</a></li>
+						<li><a class="dropdown-item {{#if qualitaet}} active{{/if}}" href="/ueber-uns/qualitaet.html">Qualit&auml;t</a></li>
+						<li class="dropdown-submenu">
+							<a class="dropdown-item {{#if kooperationen}} active{{/if}}" data-toggle="dropdown" href="/ueber-uns/kooperationen.html">Kooperationen</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item {{#if kooperationen}} active{{/if}}" href="/ueber-uns/kooperationen.html">Kooperationen</a></li>
+								<li><a class="dropdown-item {{#if gesundheitsprogramme}} active{{/if}}" href="/ueber-uns/kooperationen/gesundheitsprogramme.html">Gesundheitsprogramme</a></li>
+								<li><a class="dropdown-item {{#if integrierte-versorgung}} active{{/if}}" href="/ueber-uns/kooperationen/integrierte-versorgung.html">Integrierte Versorgung</a></li>
+							</ul>
+						</li>
+						<li><a class="dropdown-item {{#if kontakt}} active{{/if}}" href="/ueber-uns/kontakt.html">Kontakt</a></li>
+						<li class="dropdown-submenu">
+							<a class="dropdown-item {{#if kongresse}} active{{/if}}" data-toggle="dropdown" href="/ueber-uns/kongresse.html">Kongresse</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item {{#if kongresse}} active{{/if}}" href="/ueber-uns/kongresse.html">Kongresse</a></li>
+								<li><a class="dropdown-item {{#if 2019_ambulant_vor_stationaer}} active{{/if}}" href="/ueber-uns/kongresse/2019_ambulant_vor_stationaer.html">2019, ambulant vor stationär</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item {{#if spital_klinik}} active{{/if}}">
+					<a class="nav-link" href="/spital_klinik.html">Spital / Klinik</a>
+				</li>
+				<li class="nav-item {{#if apotheken}} active{{/if}}">
+					<a class="nav-link" href="/apotheken.html">Apotheken</a>
+				</li>
+				<li class="nav-item dropdown {{#if ueberuns}} active{{/if}}">
+					<a class="nav-link dropdown-toggle" href="/aerzte_zahnaerzte.html" href="#" id="navbarDropdownMenuLink" role="button"
+						 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ärzte / Zahnärzte</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<li><a class="dropdown-item {{#if aerzte_zahnaerzte}} active{{/if}}" href="/aerzte_zahnaerzte.html">Ärzte / Zahnärzte</a></li>
+						<li><a class="dropdown-item {{#if tarmed}} active{{/if}}" href="/aerzte_zahnaerzte/tarmed.html">TARMED</a></li>
+						<li><a class="dropdown-item {{#if aerzte}} active{{/if}}" href="/aerzte_zahnaerzte/aerzte.html">Ärzte</a></li>
+						<li><a class="dropdown-item {{#if aerztenetzwerke}} active{{/if}}" href="/aerzte_zahnaerzte/aerztenetzwerke.html">Ärztenetzwerke</a></li>
+						<li><a class="dropdown-item {{#if hausaerzte}} active{{/if}}" href="/aerzte_zahnaerzte/hausaerzte.html">Hausärzte</a></li>
+						<li><a class="dropdown-item {{#if zweitmeinungsarzt}} active{{/if}}" href="/aerzte_zahnaerzte/zweitmeinungsarzt.html">Zweitmeinungsarzt</a></li>
+					</ul>
 				</li>
 			</ul>
+		</div>
+		<div class="meta-nav">
+			<nav>
+				<ul>
+					{{#if false}}
+					<li><a href="/de">DE</a></li>
+					<li><a href="/fr">FR</a></li>
+					<li><a href="/it">IT</a></li>
+					{{/if}}
+					<li><a href="/ueber-uns/kontakt.html">Kontakt</a></li>
+					<li><a href="https://traditional.picturedesk.ch">traditional.picturedesk.ch</a></li>
+				</ul>
+			</nav>
 		</div>
 	</div>
 </nav>

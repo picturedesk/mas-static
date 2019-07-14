@@ -1,15 +1,30 @@
 {{#> base }}
 
 	{{> header ueberuns=this }}
-	{{> logo }}
-	{{> key-visual }}
+	{{> key-visual image="/assets/images/header_subsites_leistungserbringer_desktop.jpg" }}
 
-  <main role="main" class="container">
+	<main role="main" class="container">
 
-    {{#> welcome title="About Page" }}
-      <p class="lead">Use this document as a way to quickly start any new project.</p>
-    {{/welcome}}
+		{{> title }}
 
-  </main>
+		{{#> text-link-image}}
+			<p>Der Konzernbereich Leistungen & Produkte ist dafür verantwortlich, dass der Leistungsanspruch unserer Kunden,
+				d.h. insbesondere der Anspruch auf Auszahlung und Rückerstattung bezogener Leistungen, erfüllt wird. Vor diesem
+				Hintergrund kümmern wir uns um den gesamten Leistungsabrechnungsprozess und nehmen so auch unsere von Gesetzes
+				wegen vorgesehenen Kontrollaufgaben wahr. Themen wie Leistungssteuerung und Patientenbegleitung als auch das
+				Leistungserbringer-Management gehören dabei ebenfalls in unseren Verantwortungsbereich.
+			</p>
+		{{/text-link-image}}
+
+		{{#> text-link-image title="Über die Mission Headless Gruppe"
+												 link="https://www.css.ch/de/home/ueber_uns/unternehmen/gruppengesellschaft.html"
+												 link-title="Organigramm der Mission Headless Gruppe" }}
+			<p>Die Mission Headless Gruppe mit Sitz in Adligenswil wurde 1953 gegründet. Das traditionsreiche Unternehmen hat rund 0.5
+				Millionen Kunden und zählt einen Umsatz von 1 Milliarden Franken zu den führenden Schweizer
+				Firmen.</p>
+		{{/text-link-image}}
+
+		{{> footer }}
+	</main>
 
 {{/ base }}

@@ -1,0 +1,47 @@
+{{#> base }}
+
+	{{> header aerzte_zahnaerzte=this }}
+	{{> key-visual image="/assets/images/header_subsites_leistungserbringer_desktop.jpg" }}
+
+	<main role="main" class="container">
+
+		{{> title }}
+
+		{{#> text-link-image}}
+			<p>Zum Wohle unserer Kunden beschäftigen wir uns mit den optimalen Rahmenbedingungen für Behandlungen und wie
+				Schnittstellen für alle Beteiligten am sinnvollsten gestaltet werden.
+			</p>
+		{{/text-link-image}}
+
+		{{#> text-link-image title="Gesundheitsprogramme der Mission Headless" }}
+			<p>Unsere Gesundheitsprogramme verstehen sich als
+				Ergänzung zur bestehenden Therapie und unterstützen Sie dabei, Ihrem Patienten wo nötig eine zusätzliche
+				Hilfestellung anzubieten.</p>
+		{{/text-link-image}}
+
+		{{#> text-link-image title="KOGU-Formular für Medikamente"
+												 link="http://www.vertrauensaerzte.ch/links/covercommitment/"
+												 link-title="KOGU-Formular für Medikamente" }}
+			<p>Formulare für Gesuche um Kostengutsprachen nach Art. 71 KVV und für Medikamente mit speziellen
+				Bestimmungen.</p>
+		{{/text-link-image}}
+
+		{{> teaser-download title='Unfallanzeige' downloadlist='
+			{"items":
+				[{
+					"type": "pdf",
+					"text": "Schadenmeldung Zahnschaden",
+					"link": "https://www.css.ch/downloadpdf.html?fileRef=%2Fcontent%2Fdam%2Fcss%2Fde%2Fdocuments%2Fprivatpersonen%2Fformulare%2F26_d_zahnschaeden.pdf&mimeType=application/pdf&_charset_=utf-8"
+				},
+				{
+					"type": "pdf",
+					"text": "Unfallanzeige (Grund- und Zusatzversicherung)",
+					"link": "https://www.css.ch/downloadpdf.html?fileRef=%2Fcontent%2Fdam%2Fcss%2Fde%2Fdocuments%2Fprivatpersonen%2Fformulare%2F21u_d_form_unfallanzeige.pdf&mimeType=application/pdf&_charset_=utf-8"
+				}]
+			}'
+		}}
+
+		{{> footer }}
+	</main>
+
+{{/ base }}

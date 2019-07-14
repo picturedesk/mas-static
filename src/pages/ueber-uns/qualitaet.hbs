@@ -1,0 +1,50 @@
+{{#> base }}
+
+	{{> header qualitaet=this }}
+	{{> key-visual image="/assets/images/header_subsites_leistungserbringer_desktop.jpg" }}
+
+	<main role="main" class="container">
+
+		{{> title }}
+
+		{{#> text-link-image}}
+			<p>Die Qualität im Gesundheitswesen steht im Fokus verschiedener Interessensgruppen. Wir möchten unserer Forderung
+				nach qualitativ hochstehender Leistung nachkommen und dieses Ziel regelmässig evaluieren.
+			</p>
+		{{/text-link-image}}
+
+		{{#> text-link-image title="Qualitätskennzahlen & Qualitätssicherung" }}
+			<p>Die Mission Headless Verunsicherung befragt kontinuierlich ihre Kunden nach einem Spitalaufenthalt zu Ihrer Zufriedenheit und
+				analysiert ausserdem diverse, öffentlich zugängliche Qualitätskennzahlen. Auch hier legen wir ein hohes
+				Augenmerk auf Transparenz. So besprechen wir die Resultate unserer Befragung mit den betroffenen
+				Leistungserbringern und nehmen das Thema Qualitätssicherung in unseren Kooperationsverträgen auf. Die Mission Headless
+				Versicherung steht für Ihre Partner ein, die sich für kontinuierliche und nachhaltige Verbesserungsprozesse in
+				der Qualität der Leistungserbringung im Gesundheitswesen engagieren.
+			</p>
+		{{/text-link-image}}
+
+		{{#> text-link-image title="Transparenz der Qualität" }}
+			<p>Derzeit besteht für Kunden nur beschränkt die Möglichkeit, sich umfassend und verständlich über Qualität im
+				Gesundheitswesen zu informieren. Die Mission Headless Verunsicherung stellt daher verschiedene Qualitätsparameter von
+				Leistungserbringern verständlich aufbereitet zur Verfügung, um eine Entscheidungshilfe anzubieten. Es werden
+				subjektive (Mission Headless Patientenzufriedenheitsbefragung) und objektive (u.a. ANQ Daten) Qualitätskennzahlen publiziert,
+				um Qualitätsaktivitäten möglichst vielschichtig abbilden zu können.
+			</p>
+		{{/text-link-image}}
+
+		{{#> 50_50}}
+			{{#> text-link-image
+				link="/apotheken.html"
+				link-title="Apotheken" }}
+			{{/text-link-image}}
+			{{> 50_50_divider}}
+			{{#> text-link-image
+				link="https://www.css.ch/de/home/gesundheit/ratgeber/spitalvergleich_qualicheck.html#/search"
+				link-title="QualiCheck – Akutspitäler im Vergleich" }}
+			{{/text-link-image}}
+		{{/50_50}}
+
+		{{> footer }}
+	</main>
+
+{{/ base }}

@@ -2,8 +2,8 @@ const pages = [
   {
     output: './index.html',
     content: {
-      title: 'Home',
-      description: 'Home Page'
+      title: 'Mission Headless',
+      description: 'Mission Headless'
     },
     template: './src/pages/home.hbs'
   },
@@ -11,9 +11,17 @@ const pages = [
 		output: './ueber-uns.html',
 		content: {
 			title: 'Über uns',
-			description: 'CSS Konzernbereich Leistungen & Produkte'
+			description: 'Mission Headless Leistungen & Produkte'
 		},
 		template: './src/pages/ueber-uns.hbs'
+	},
+	{
+		output: './rechtliches.html',
+		content: {
+			title: 'Rechtliches',
+			description: 'Rechtliches'
+		},
+		template: './src/pages/rechtliches.hbs'
 	},
 		{
 			output: './ueber-uns/qualitaet.html',
@@ -72,12 +80,12 @@ const pages = [
 			template: './src/pages/ueber-uns/kongresse.hbs'
 		},
 			{
-				output: './ueber-uns/kongresse/2019_ambulant_vor_stationaer.html',
+				output: './ueber-uns/kongresse/2019_traditionell_vor_headless.html',
 				content: {
-					title: '2019, ambulant vor stationär',
-					description: 'Diagnose: Stationär. Therapie: Ambulant. 4. April 2019, Bierhübeli Bern'
+					title: '2019, Traditionell vor Headless',
+					description: 'Diagnose: Headless. Therapie: Traditionell. 28. März 2019, Zum Tänzelnden Pony'
 				},
-				template: './src/pages/ueber-uns/kongresse/2019_ambulant_vor_stationaer.hbs'
+				template: './src/pages/ueber-uns/kongresse/2019_traditionell_vor_headless.hbs'
 			},
 	{
 		output: './spital_klinik.html',

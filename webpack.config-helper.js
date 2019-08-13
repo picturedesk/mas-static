@@ -46,9 +46,12 @@ module.exports = (options) => {
       new CopyWebpackPlugin([
         {from: './src/assets/images', to: './assets/images'}
       ]),
-      new CopyWebpackPlugin([
-        {from: './src/assets/fonts', to: './assets/fonts'}
-      ]),
+			new CopyWebpackPlugin([
+				{from: './src/assets/fonts', to: './assets/fonts'}
+			]),
+			new CopyWebpackPlugin([
+				{from: './src/assets/downloads', to: './assets/downloads'}
+			]),
       new Webpack.DefinePlugin({
         'process.env': {
           NODE_ENV: JSON.stringify(options.isProduction ? 'production' : 'development')

@@ -1,41 +1,50 @@
 {{#> base }}
 
-{{> header hausaerzte=this }}
-{{> key-visual image="/assets/images/header_subsites_leistungserbringer_desktop.jpg" }}
+	{{> header hausaerzte=this }}
+	{{> key-visual image="/assets/images/header_subsites_leistungserbringer_desktop.jpg" }}
 
-<main role="main" class="container">
+	<main role="main" class="container">
 
-	{{> title }}
+		{{> title }}
 
-	{{#> text-link-image }}
-		<p>In den Produkten Hausarztversicherung Profit und Hausarztversicherung FirstMed bestimmen die Versicherten bei Versicherungsabschluss ihren persönlichen Hausarzt.</p>
-		<p>Durch die optimale Betreuung - auch spezieller Patientenkollektive wie chronisch Kranke - resultieren
-			Kostensenkungen, die wir durch einen reelen Kostenvergleich zwischen dem behandelten und einem
-			Vergleichskollektiv entgelten.</p>
-		<p>Die Liste der Mission Headless-anerkannten Hausärzte beinhaltet ausschliesslich Grundversorger. Dazu gehören Allgemeine Innere Mediziner, praktische Ärzte sowie Kinder- und Jugendärzte. Die Liste wird laufend aktualisiert.</p>
-	{{/text-link-image}}
+		{{#> text-link-image }}
+			<p>Sie folgten ihm , als er leicht über die grasbewachsenen Hänge hinaufstieg. Obwohl Frodo lief und atmete
+				und um ihn her lebende Blätter und Blumen von demselben kühlen Wind bewegt wurden, der sein Gesicht fächelte,
+				hatte er das Gefühl, als sei er in einem zeitlosen Land, das nicht verging oder sich veränderte oder in
+				Vergessenheit geriet.</p>
+			<p>Wenn er fort war und wieder in die äußere Welt hinübergewechselt hatte, würde Frodo, der Wanderer aus dem
+				Auenland, immer noch hier wandeln auf dem Gras zwischen elanor und niphredil im schönen Lothlórien.</p>
+			<p>Sie betraten den Kreis der weißen Bäume. Der Südwind blies über Cerin Amroth und seufzte zwischen den
+				Ästen. Frodo stand still und hörte in weiter Ferne große Wogen an Ufer branden, die vor langer Zeit hinweg-
+				gewaschen worden waren, und er hörte Seevögel schreien, deren Art auf der Erde ausgestorben war.</p>
+		{{/text-link-image}}
 
-	{{#> text-link-image link="/ueber-uns/kontakt/kontaktformular.html"
-											 link-title="Kontaktformular" }}
-	{{/text-link-image}}
+		{{#> text-link-image link="/ueber-uns/kontakt/kontaktformular.html"
+												 link-title="Kontaktformular" }}
+		{{/text-link-image}}
 
-	{{#> text-link-image title="Häufige Fragen" }}
-		<h3>Wie kann ich auf die Hausarztliste aufgenommen werden?</h3>
-		<ol>
-			<li>Prüfen Sie ob Ihr Name auf der <a target="_blank" href="https://www.css.ch/de/home/gesundheit/gesund_werden/behandlung_arzt/docfinder.html">Ärzteliste</a> erscheint.</li>
-			<li>Erscheint er nicht, können Sie sich via <a href="https://www.css.ch/de/kampagne/leistungserbringer/aerzte_zahnaerzte/hausaerzte/kontakt_hausarzt.html">Kontaktformular</a> aufnehmen lassen. Voraussetzung dafür ist, dass Sie Hausarztfunktionen übernehmen.<br>
-			</li>
-		</ol>
-		<h3>Ich möchte meinen Aufnahmestatus ändern</h3>
-		<p>Teilen Sie Ihren Aufnahmestatus per <a href="/ueber-uns/kontakt/kontaktformular.html">Kontaktformular</a> mit.</p>
-		<h3>Ich möchte meine Praxisaufgabe melden und von der Ärzteliste gestrichen werden.</h3>
-		<p>Nutzen Sie das <a href="/ueber-uns/kontakt/kontaktformular.html">Kontaktformular</a> und geben uns zusätzlich den Grund Ihrer Aufgabe und gegebenenfalls den Nachfolger an.<br>
-		</p>
-		<h3>Ich möchte meine Praxisadressänderung mitteilen.</h3>
-		<p>Melden Sie die Adressänderung der <a href="https://www.sasis.ch/de/773" target="_blank">sasis AG</a>. Die Änderung wird danach bei uns übernommen.</p>
-	{{/text-link-image}}
+		{{#> text-link-image title="Häufige Fragen" }}
+		{{/text-link-image}}
 
-	{{> footer }}
-</main>
+		{{> accordion accordion='
+			{"items":
+				[{
+					"title": "Wie kam Haldir auf das hohe Flett?",
+					"text": "<ol><li>Als Frodo sich anschickte, ihm zu folgen, legte er seine Hand neben der Leiter auf den Baum: niemals zuvor war ihm so plötzlich und deutlich zum Bewußtsein gekommen, wie sich die Rinde eines Baums anfühlt und wie sie und das Leben in ihr beschaffen sind.</li><li>Das Holz und die Berührung erfüllte ihn mit Freude, nicht mit der des Försters oder Schreiners; es war die Freude am lebendigen Baum selbst.<br></li></ol>"
+
+				},
+				{
+					"title": "Wie drehte Haldir Frodos Hand nach Süden?",
+					"text": "<p>Als er schließlich auf die hohe Plattform trat, nahm Haldir seine Hand und drehte ihn nach Süden. »Schau zuerst in dieser Richtung«, sagte er. Frodo sah, immer noch in einiger Entfernung, einen Berg aus vielen mächtigen Bäumen oder eine Stadt aus grünen Türmen: was von beiden es war, konnte er nicht sagen.</p>"
+				},
+				{
+					"title": "Wo liegt die Festung von Süd-Düsterwald?",
+					"text": "<p>»Sie ist umgeben von einem Wald aus dunklen Tannen, und die Bäume kämpfen miteinander, und ihre Zweige verrotten und verdorren. In der Mitte auf einer steinigen Höhe steht Dol Guldur, wo der verborgene Feind lange seine Behausung hatte. Wir fürchten, daß es jetzt wieder bewohnt ist, und mit siebenfacher Macht. In letzter Zeit hängt oft eine schwarze Wolke darüber. Auf dieser Höhe kannst du die beiden feindlichen Mächte sehen; und immer kämpfen sie jetzt in Gedanken miteinander, aber während das Licht den wahren Kern der Dunkelheit wahrnimmt, ist sein eigenes Geheimnis noch nicht entdeckt. Noch nicht.«</p>"
+				}]
+			}'
+		}}
+
+		{{> footer }}
+	</main>
 
 {{/ base }}
